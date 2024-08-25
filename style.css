@@ -1,0 +1,144 @@
+/* Styles for the layout, adjust as needed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Adding food emojis as background */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Ctext x="10" y="50" font-size="40"%3E🍔%3C/text%3E%3Ctext x="30" y="70" font-size="40"%3E🍕%3C/text%3E%3Ctext x="50" y="30" font-size="40"%3E🍣%3C/text%3E%3Ctext x="70" y="50" font-size="40"%3E🥗%3C/text%3E%3C/svg%3E');
+    background-size: 80px 80px; /* Adjusted size for larger emojis */
+    background-repeat: repeat;
+  }
+  header {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurant {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background-color: white; /* Background color for Restaurant 1 and Restaurant 2 */
+  }
+  .restaurant img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .feedback-form {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .feedback-form textarea {
+    width: 80%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .feedback-form button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  select {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  .stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .stars input {
+    display: none;
+  }
+  .stars label {
+    font-size: 30px;
+    color: #ffcc00;
+    cursor: pointer;
+  }
+  .stars label:before {
+    content: '★';
+  }
+  .stars input:checked ~ label {
+    color: orange;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  .rating span {
+    margin-right: 5px;
+  }
+   /* Styles for the layout, adjust as needed */
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Adding food emojis as background */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Ctext x="10" y="50" font-size="40"%3E🍔%3C/text%3E%3Ctext x="30" y="70" font-size="40"%3E🍕%3C/text%3E%3Ctext x="50" y="30" font-size="40"%3E🍣%3C/text%3E%3Ctext x="70" y="50" font-size="40"%3E🥗%3C/text%3E%3C/svg%3E');
+    background-size: 80px 80px; /* Adjusted size for larger emojis */
+    background-repeat: repeat;
+  }
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurant {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background-color: white; /* Background color for Restaurant 1 and Restaurant 2 */
+  }
+  .restaurant img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .latest-reviews,
+  .top-reviews {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .feedback-list {
+    margin-top: 10px;
+  }
+  /* Remove background emojis for Latest Reviews */
+  .latest-reviews {
+    background-image: none;
+  }
+  .overall-stars {
+    flex: 0 0 30%; /* Width of the overall stars section */
+    margin-left: 20px;
+  }
+  .star-rating {
+    color: gold; /* Change the color of the star icons */
+  }
+  .stars-count {
+    margin-left: 5px; /* Adjust the space between stars and count */
+    font-size: 0.8em; /* Adjust the font size for the count */
+    color: black; /* Change the color of the count */
+  }
